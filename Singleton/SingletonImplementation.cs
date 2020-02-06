@@ -11,7 +11,7 @@ namespace DesignPattern.Singleton
         private SingletonImplementation()
         {
             _counter++;
-            Console.WriteLine(_counter);
+            Console.WriteLine($"Created Instance: {_counter}");
         }
 
         public void ExpressThis(string expression)

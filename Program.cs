@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
+using DesignPattern.Factory;
 using DesignPattern.Singleton;
 
 namespace DesignPattern
@@ -8,19 +9,15 @@ namespace DesignPattern
     {
         static void Main(string[] args)
         {
-            Parallel.Invoke(FirstExpression, SecondExpression);
+
+            Console.WriteLine($"______________________________________________________________________\n"); 
+            new SingletonTest().Test();
+            Console.WriteLine($"______________________________________________________________________\n");
+            new FactoryTest().Test();
+
             Console.ReadKey();
         }
 
-        static void FirstExpression()
-        {
-            SingletonImplementation singleton = SingletonImplementation.GetSingleton;
-            singleton.ExpressThis("First");
-        }
-        static void SecondExpression()
-        {
-            SingletonImplementation singleton = SingletonImplementation.GetSingleton;
-            singleton.ExpressThis("Second");
-        }
+        
     }
 }
