@@ -16,5 +16,10 @@
         {
             return $"Safari";
         }
+
+        public string Stability()
+        {
+            return $"Stable Hardware";
+        }
     }
 }

@@ -8,5 +8,8 @@
         public string Kernel { get; set; }
         public string GUI { get; set; }
         public string DefaultBrowser { get; set; }
+        public string Flexibility { get; set; }
+        public string Source { get; set; }
+        public string Hardware { get; set; }
     }
 }

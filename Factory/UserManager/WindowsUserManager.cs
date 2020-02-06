@@ -16,5 +16,10 @@
         {
             return $"Microsoft Edge";
         }
+
+        public string PowerOfUI()
+        {
+            return $"Flexible UI";
+        }
     }
 }

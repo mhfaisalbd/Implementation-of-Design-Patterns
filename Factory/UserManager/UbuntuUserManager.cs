@@ -16,5 +16,10 @@
         {
             return $"Firefox";
         }
+
+        public string SourceFind()
+        {
+            return $"Open-Source";
+        }
     }
 }
