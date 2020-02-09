@@ -36,5 +36,10 @@ namespace DesignPattern.Factory.FactoryMethod
             }
         }
 
+        public IList<OperatingSystemUser> GetUsers()
+        {
+            return _operatingSystemUsers;
+        }
+
     }
 }

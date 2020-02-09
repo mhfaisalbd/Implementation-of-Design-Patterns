@@ -32,5 +32,10 @@ namespace DesignPattern.Factory
                 Console.WriteLine("{0,-3} {1,-8} {2,-10} {3,-11} {4,-16} {5,-24}",user.Id,user.UserName,user.OperatingSystem,user.Kernel,user.GUI,user.DefaultBrowser);
             }
         }
+
+        public IList<OperatingSystemUser> GetUsers()
+        {
+            return _operatingSystemUsers;
+        }
     }
 }

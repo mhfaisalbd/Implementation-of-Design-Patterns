@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 using DesignPattern.Factory;
+using DesignPattern.Factory.AbstractFactory;
 using DesignPattern.Factory.FactoryMethod;
 using DesignPattern.Singleton;
 
@@ -17,7 +18,11 @@ namespace DesignPattern
             new FactoryTest().Test();
             Console.WriteLine($"_______________________________________________________________________" +
                               $"__________________________________________\n");
-            new FactoryMethodTest().Test();
+            var testItem = new FactoryMethodTest();
+            testItem.Test();
+            Console.WriteLine($"_______________________________________________________________________" +
+                              $"_______________________________________________________________________\n");
+            new AbstractFactoryTest(testItem.GetUsers()).Test();
 
             Console.ReadKey();
         }
